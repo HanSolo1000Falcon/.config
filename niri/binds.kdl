@@ -1,0 +1,42 @@
+binds {
+  Mod+Shift+U { show-hotkey-overlay; }
+  Mod+Q { close-window; }
+
+  Print { screenshot; }
+
+  Mod+Alt+Q { spawn "bash" "-c" "poweroff" ;}
+
+  // Applications binds because I am lazy!
+  Mod+Space { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+  Mod+T { spawn "kitty"; }
+  Mod+W { spawn "firefox-bin"; }
+  Mod+E { spawn "dolphin"; }
+  Mod+R { spawn "vesktop-bin"; }
+  Mod+Y { spawn "spotify"; }
+
+  Mod+Shift+P { spawn "playerctl" "play-pause"; }
+  Mod+Shift+N { spawn "playerctl" "next"; }
+  Mod+Shift+B { spawn "playerctl" "previous"; }
+
+  Mod+H { focus-column-left; }
+  Mod+J { focus-window-down; }
+  Mod+K { focus-window-up; }
+  Mod+L { focus-column-right; }
+
+  Mod+Shift+H { move-column-left; }
+  Mod+Shift+L { move-column-right; }
+
+  Mod+U { focus-workspace-down; }
+  Mod+I { focus-workspace-up; }
+
+  Mod+Tab { toggle-overview; }
+
+  Mod+Shift+R { switch-preset-column-width; }
+  Mod+Shift+K { switch-preset-window-height; }
+  Mod+Shift+F { maximize-column; }
+  Mod+Shift+C { center-column; }
+
+  Mod+Shift+S { toggle-window-floating; }
+
+  Mod+Shift+W { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "toggle"; } 
+}
