@@ -8,7 +8,7 @@ end
 
 # aliases
 alias cls clear
-alias larp-larp-sahur fastfetch
+alias larp-larp-larp-sahur "fastfetch --logo ~/.config/fastfetch/larp-larp-larp-sahur-ascii.txt"
 
 # init
 starship init fish | source
