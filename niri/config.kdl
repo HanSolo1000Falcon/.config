@@ -28,6 +28,10 @@ environment {
 
 spawn-at-startup "qs" "-c" "noctalia-shell"
 
+output "ASUSTek COMPUTER INC VG34VQL3A TCLMDW016318" {
+  mode "3440x1440@180.000"
+}
+
 include "./input.kdl"
 include "./layout.kdl"
 include "./rules.kdl"
