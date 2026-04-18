@@ -9,7 +9,7 @@ binds {
   // Applications binds because I am lazy!
   Mod+Space { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
   Mod+T { spawn "kitty"; }
-  Mod+W { spawn "zen-bin"; }
+  Mod+W { spawn-sh "fish -lc zen"; }
   Mod+E { spawn "dolphin"; }
   Mod+R { spawn "vesktop-bin"; }
   Mod+Y { spawn "spotify"; }
