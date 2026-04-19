@@ -4,8 +4,6 @@ spawn-at-startup "pipewire"
 spawn-at-startup "pipewire-pulse"
 spawn-at-startup "wireplumber"
 
-spawn-at-startup "swaybg" "-i" "/home/falcon1k/Pictures/Wallpapers/BorealForest1.jpg" "-m" "fill"
-
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/%Y-%m-%d %H-%M-%S.png"
 hotkey-overlay {

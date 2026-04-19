@@ -4,7 +4,7 @@ binds {
 
   Print { screenshot; }
 
-  Mod+Alt+Q { spawn "bash" "-c" "poweroff" ;}
+  Mod+Alt+Q { spawn "loginctl" "poweroff"; }
 
   // Applications binds because I am lazy!
   Mod+Space { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
