@@ -1,11 +1,14 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export BloonsTD6:/home/falcon1k/\x2elocal/share/Steam/steamapps/common/BloonsTD6
 SETUVAR --export CC:clang
 SETUVAR --export CXX:clang\x2b\x2b
+SETUVAR --export DOTNET_ROOT:/home/falcon1k/dotnet
 SETUVAR --export GTK_APPLICATION_PREFER_DARK_THEME:1
 SETUVAR --export GTK_THEME:Adwaita\x3adark
+SETUVAR --export SHUTDOWN_COMMAND:playerctl\x1eplay\x2dpause
 SETUVAR __fish_initialized:4300
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR fish_user_paths:/home/falcon1k/\x2etarball\x2dinstallations/zen\x1e/home/falcon1k/\x2efsysutils\x1e/home/falcon1k/\x2ecargo/bin
+SETUVAR fish_user_paths:/home/falcon1k/\x2edotnet\x1e/home/falcon1k/\x2etarball\x2dinstallations/zen\x1e/home/falcon1k/\x2efsysutils\x1e/home/falcon1k/\x2ecargo/bin
