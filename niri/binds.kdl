@@ -35,6 +35,7 @@ binds {
   Mod+Shift+K { switch-preset-window-height; }
   Mod+Shift+F { maximize-column; }
   Mod+Shift+C { center-column; }
+  Mod+Alt+F { fullscreen-window; }
 
   Mod+Shift+S { toggle-window-floating; }
 
