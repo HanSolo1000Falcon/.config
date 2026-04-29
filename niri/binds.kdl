@@ -12,6 +12,8 @@ binds {
   Mod+R { spawn "vesktop-bin"; }
   Mod+Y { spawn "spotify"; }
 
+  Mod+Alt+X { spawn "loginctl" "poweroff"; }
+
   Mod+C { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "command"; }
 
   Mod+Alt+L { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
