@@ -242,7 +242,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Catppuccin",
+        "predefinedScheme": "Rose Pine",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -351,7 +351,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "/home/falcon1k/Pictures/ProfilePicture.png",
+        "avatarImage": "~/.config/rice-pictures/ProfilePicture.png",
         "boxRadiusRatio": 1,
         "clockFormat": "HH:mm",
         "clockStyle": "custom",
@@ -652,9 +652,9 @@
     },
     "ui": {
         "boxBorderEnabled": false,
-        "fontDefault": "Liberation Mono",
+        "fontDefault": "Symbols Nerd Font Mono",
         "fontDefaultScale": 1,
-        "fontFixed": "Liberation Mono",
+        "fontFixed": "Symbols Nerd Font Mono",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.7,
         "panelsAttachedToBar": true,
@@ -666,7 +666,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/falcon1k/Pictures/Wallpapers",
+        "directory": "~/.config/rice-pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
@@ -695,7 +695,7 @@
         "useOriginalImages": false,
         "useSolidColor": false,
         "useWallhaven": false,
-        "viewMode": "recursive",
+        "viewMode": "browse",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
