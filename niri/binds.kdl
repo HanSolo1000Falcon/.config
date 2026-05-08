@@ -10,7 +10,7 @@ binds {
   Mod+W { spawn-sh "fish -lc zen"; }
   Mod+E { spawn "dolphin"; }
   Mod+R { spawn "/home/falcon1k/.local/bin/vesktop-bin"; }
-  Mod+Y { spawn "dbus-run-session" "spotify"; }
+  Mod+Y { spawn "spotify"; }
 
   Mod+Alt+X { spawn "loginctl" "poweroff"; }
 
