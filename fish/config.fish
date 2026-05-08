@@ -7,14 +7,7 @@ alias larp-larp-larp-sahur "fastfetch --logo ~/.config/fastfetch/larp-larp-larp-
 if status is-interactive
     set fish_greeting
     clear
-
-    set num (random 1 10)
-
-    if test $num -eq 5
-        larp-larp-larp-sahur
-    else
-        fastfetch
-    end
+    fastfetch
 end
 
 # init
