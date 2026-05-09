@@ -3,6 +3,7 @@
 # aliases
 alias cls clear
 alias larp-larp-larp-sahur "fastfetch --logo ~/.config/fastfetch/larp-larp-larp-sahur-ascii.txt --config ~/.config/fastfetch/llls.jsonc"
+alias fastfetch="fastfetch --config ~/.config/fastfetch/config-(hostname).jsonc"
 
 if status is-interactive
     set fish_greeting
