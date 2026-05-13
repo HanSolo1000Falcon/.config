@@ -8,7 +8,7 @@ binds {
   Mod+Space { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
   Mod+T { spawn "kitty"; }
   Mod+W { spawn-sh "fish -lc zen"; }
-  Mod+E { spawn "dolphin"; }
+  Mod+E { spawn "thunar"; }
   Mod+R { spawn "/home/falcon1k/.local/bin/vesktop-bin"; }
   Mod+Y { spawn "spotify"; }
 
