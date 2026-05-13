@@ -390,7 +390,7 @@
             ]
         },
         "language": "",
-        "lockOnSuspend": true,
+        "lockOnSuspend": false,
         "lockScreenAnimations": true,
         "lockScreenBlur": 0.5,
         "lockScreenCountdownDuration": 10000,
