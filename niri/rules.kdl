@@ -3,12 +3,17 @@ layer-rule {
   place-within-backdrop true
 }
 
+layer-rule {
+    match namespace="^mpvpaper$"
+    place-within-backdrop true
+}
+
 window-rule {
   geometry-corner-radius 20
   clip-to-geometry true
 }
 
 window-rule {
-  match app-id="gorilla-mod-manager"
+  match app-id="gorilla-mod-imanager"
   open-floating true
 }

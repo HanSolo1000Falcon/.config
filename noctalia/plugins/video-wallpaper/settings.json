@@ -1,0 +1,18 @@
+{
+  "activeBackend": "qt6-multimedia",
+  "automationMode": "random",
+  "automationTime": 300,
+  "fillMode": "fit",
+  "mpvSocket": "/tmp/mpv-socket",
+  "profile": "default",
+  "volume": 1,
+  "wallpapersFolder": "/home/falcon1k/.config/rice-pictures/Wallpapers/Ultrawide",
+  "thumbCacheReady": true,
+  "enabled": true,
+  "DP-2": {
+    "currentWallpaper": "/home/falcon1k/.config/rice-pictures/Wallpapers/Ultrawide/LiveWallpaperTest.webm",
+    "noctaliaWallpaper": "/home/falcon1k/.config/rice-pictures/Wallpapers/Ultrawide/NatureTwo.jpg",
+    "isPlaying": true,
+    "isMuted": true
+  }
+}
