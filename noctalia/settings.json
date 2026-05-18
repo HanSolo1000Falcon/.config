@@ -86,6 +86,9 @@
                     "id": "Clock",
                     "tooltipFormat": "h:mm AP ddd, MMM dd",
                     "useCustomFont": false
+                },
+                {
+                    "id": "plugin:git-companion"
                 }
             ],
             "left": [
@@ -211,19 +214,6 @@
                     "icon": "noctalia",
                     "id": "ControlCenter",
                     "useDistroLogo": false
-                },
-                {
-                    "defaultSettings": {
-                        "activeBackend": "qt6-multimedia",
-                        "automationMode": "random",
-                        "automationTime": 300,
-                        "fillMode": "fit",
-                        "mpvSocket": "/tmp/mpv-socket",
-                        "profile": "default",
-                        "volume": 1,
-                        "wallpapersFolder": "~/Pictures/Wallpapers"
-                    },
-                    "id": "plugin:video-wallpaper"
                 }
             ]
         }
@@ -682,7 +672,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/falcon1k/Pictures/Wallpapers",
+        "directory": "/home/falcon1k/.config/rice-pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
@@ -716,7 +706,7 @@
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "",
+        "wallhavenQuery": "boreal forest",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
