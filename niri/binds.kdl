@@ -9,8 +9,8 @@ binds {
   Mod+T { spawn "kitty"; }
   Mod+W { spawn-sh "fish -lc zen"; }
   Mod+E { spawn "thunar"; }
-  Mod+R { spawn "/home/falcon1k/.local/bin/vesktop-bin"; }
-  Mod+Y { spawn "spotify"; }
+  Mod+R { spawn "equibop"; }
+  Mod+Y { spawn "spotify-launcher"; }
 
   Mod+Alt+X { spawn "loginctl" "poweroff"; }
 

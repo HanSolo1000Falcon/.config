@@ -1,8 +1,8 @@
 spawn-at-startup "xwayland-satellite"
 
-spawn-at-startup "pipewire"
-spawn-at-startup "pipewire-pulse"
-spawn-at-startup "wireplumber"
+//spawn-at-startup "pipewire"
+//spawn-at-startup "pipewire-pulse"
+//spawn-at-startup "wireplumber"
 
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/%Y-%m-%d %H-%M-%S.png"

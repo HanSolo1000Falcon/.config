@@ -682,7 +682,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "~/.config/rice-pictures/Wallpapers",
+        "directory": "/home/falcon1k/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
