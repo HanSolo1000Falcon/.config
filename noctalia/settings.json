@@ -6,10 +6,10 @@
         "clipboardWrapText": true,
         "customLaunchPrefix": "",
         "customLaunchPrefixEnabled": false,
-        "density": "default",
+        "density": "comfortable",
         "enableClipPreview": true,
         "enableClipboardChips": true,
-        "enableClipboardHistory": false,
+        "enableClipboardHistory": true,
         "enableClipboardSmartIcons": true,
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
@@ -19,12 +19,12 @@
         "overviewLayer": false,
         "pinnedApps": [
         ],
-        "position": "center",
+        "position": "top_center",
         "screenshotAnnotationTool": "",
         "showCategories": true,
         "showIconBackground": false,
         "sortByMostUsed": true,
-        "terminalCommand": "ghostty",
+        "terminalCommand": "kitty -e",
         "viewMode": "list"
     },
     "audio": {
@@ -54,8 +54,8 @@
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": false,
-        "marginHorizontal": 6,
-        "marginVertical": 5,
+        "marginHorizontal": 5,
+        "marginVertical": 6,
         "middleClickAction": "none",
         "middleClickCommand": "",
         "middleClickFollowMouse": false,
@@ -74,7 +74,7 @@
         "showCapsule": true,
         "showOnWorkspaceSwitch": true,
         "showOutline": true,
-        "useSeparateOpacity": true,
+        "useSeparateOpacity": false,
         "widgetSpacing": 6,
         "widgets": {
             "center": [
@@ -86,12 +86,19 @@
                     "id": "Clock",
                     "tooltipFormat": "h:mm AP ddd, MMM dd",
                     "useCustomFont": false
-                },
-                {
-                    "id": "plugin:git-companion"
                 }
             ],
             "left": [
+                {
+                    "colorizeSystemIcon": "primary",
+                    "colorizeSystemText": "none",
+                    "customIconPath": "",
+                    "enableColorization": true,
+                    "icon": "rocket",
+                    "iconColor": "none",
+                    "id": "Launcher",
+                    "useDistroLogo": true
+                },
                 {
                     "characterCount": 2,
                     "colorizeIcons": false,
@@ -113,6 +120,27 @@
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
                 },
+                {
+                    "compactMode": false,
+                    "hideMode": "hidden",
+                    "hideWhenIdle": false,
+                    "id": "MediaMini",
+                    "maxWidth": 1000,
+                    "panelShowAlbumArt": true,
+                    "scrollingMode": "always",
+                    "showAlbumArt": true,
+                    "showArtistFirst": true,
+                    "showProgressRing": true,
+                    "showVisualizer": true,
+                    "textColor": "none",
+                    "useFixedWidth": false,
+                    "visualizerType": "linear"
+                },
+                {
+                    "id": "plugin:lyrics-fetch"
+                }
+            ],
+            "right": [
                 {
                     "compactMode": true,
                     "diskPath": "/",
@@ -136,53 +164,6 @@
                     "usePadding": false
                 },
                 {
-                    "colorizeSystemIcon": "none",
-                    "colorizeSystemText": "none",
-                    "customIconPath": "",
-                    "enableColorization": false,
-                    "icon": "rocket",
-                    "iconColor": "none",
-                    "id": "Launcher",
-                    "useDistroLogo": false
-                },
-                {
-                    "compactMode": false,
-                    "hideMode": "hidden",
-                    "hideWhenIdle": false,
-                    "id": "MediaMini",
-                    "maxWidth": 1000,
-                    "panelShowAlbumArt": true,
-                    "scrollingMode": "always",
-                    "showAlbumArt": true,
-                    "showArtistFirst": true,
-                    "showProgressRing": true,
-                    "showVisualizer": true,
-                    "textColor": "none",
-                    "useFixedWidth": false,
-                    "visualizerType": "linear"
-                }
-            ],
-            "right": [
-                {
-                    "blacklist": [
-                    ],
-                    "chevronColor": "none",
-                    "colorizeIcons": false,
-                    "drawerEnabled": true,
-                    "hidePassive": false,
-                    "id": "Tray",
-                    "pinned": [
-                    ]
-                },
-                {
-                    "hideWhenZero": false,
-                    "hideWhenZeroUnread": false,
-                    "iconColor": "none",
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true,
-                    "unreadBadgeColor": "primary"
-                },
-                {
                     "deviceNativePath": "",
                     "displayMode": "alwaysShow",
                     "hideIfIdle": false,
@@ -192,18 +173,13 @@
                     "showPowerProfiles": false
                 },
                 {
-                    "displayMode": "onhover",
-                    "iconColor": "none",
-                    "id": "Volume",
-                    "middleClickCommand": "pwvucontrol || pavucontrol",
-                    "textColor": "none"
-                },
-                {
-                    "applyToAllMonitors": false,
-                    "displayMode": "onhover",
-                    "iconColor": "none",
-                    "id": "Brightness",
-                    "textColor": "none"
+                    "defaultSettings": {
+                        "group": "",
+                        "platform": "github",
+                        "refreshInterval": 60,
+                        "repo": ""
+                    },
+                    "id": "plugin:git-companion"
                 },
                 {
                     "colorizeDistroLogo": false,
@@ -243,11 +219,11 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "fruit-salad",
+        "generationMethod": "content",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Catppuccin",
+        "predefinedScheme": "Monochrome",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": true
@@ -314,6 +290,11 @@
         "gridSnap": false,
         "gridSnapScale": false,
         "monitorWidgets": [
+            {
+                "name": "DP-2",
+                "widgets": [
+                ]
+            }
         ],
         "overviewEnabled": true
     },
@@ -322,8 +303,8 @@
         "backgroundOpacity": 1,
         "colorizeIcons": false,
         "deadOpacity": 0.6,
-        "displayMode": "auto_hide",
-        "dockType": "floating",
+        "displayMode": "always_visible",
+        "dockType": "attached",
         "enabled": false,
         "floatingRatio": 1,
         "groupApps": false,
@@ -364,10 +345,10 @@
         "dimmerOpacity": 0,
         "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
-        "enableLockScreenMediaControls": true,
-        "enableShadows": false,
+        "enableLockScreenMediaControls": false,
+        "enableShadows": true,
         "forceBlackScreenCorners": true,
-        "iRadiusRatio": 0.25,
+        "iRadiusRatio": 1,
         "keybinds": {
             "keyDown": [
                 "Down"
@@ -450,8 +431,8 @@
         "name": "Gothenburg",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
-        "showWeekNumberInCalendar": false,
-        "use12hourFormat": true,
+        "showWeekNumberInCalendar": true,
+        "use12hourFormat": false,
         "useFahrenheit": false,
         "weatherEnabled": true,
         "weatherShowEffects": true,
@@ -488,7 +469,7 @@
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": true,
         "enableMarkdown": true,
-        "enableMediaToast": false,
+        "enableMediaToast": true,
         "enabled": true,
         "location": "top_right",
         "lowUrgencyDuration": 3,
@@ -496,7 +477,7 @@
         ],
         "normalUrgencyDuration": 8,
         "overlayLayer": true,
-        "respectExpireTimeout": false,
+        "respectExpireTimeout": true,
         "saveToHistory": {
             "critical": true,
             "low": true,
@@ -652,6 +633,22 @@
             {
                 "enabled": true,
                 "id": "code"
+            },
+            {
+                "enabled": true,
+                "id": "discord"
+            },
+            {
+                "enabled": true,
+                "id": "zenBrowser"
+            },
+            {
+                "enabled": true,
+                "id": "steam"
+            },
+            {
+                "enabled": true,
+                "id": "gtk"
             }
         ],
         "enableUserTheming": true
@@ -664,11 +661,11 @@
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.7,
         "panelsAttachedToBar": true,
-        "scrollbarAlwaysVisible": true,
+        "scrollbarAlwaysVisible": false,
         "settingsPanelMode": "attached",
-        "settingsPanelSideBarCardStyle": true,
+        "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true,
-        "translucentWidgets": false
+        "translucentWidgets": true
     },
     "wallpaper": {
         "automationEnabled": false,
