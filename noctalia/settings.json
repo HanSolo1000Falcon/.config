@@ -137,6 +137,15 @@
                     "visualizerType": "linear"
                 },
                 {
+                    "defaultSettings": {
+                        "adaptScrollSpeed": true,
+                        "fontSize": 10,
+                        "hideWhenEmpty": true,
+                        "scrollMode": "always",
+                        "scrollSpeed": 70,
+                        "verticalRotationDirection": "auto",
+                        "widgetWidth": 300
+                    },
                     "id": "plugin:lyrics-fetch"
                 }
             ],
@@ -180,6 +189,19 @@
                         "repo": ""
                     },
                     "id": "plugin:git-companion"
+                },
+                {
+                    "defaultSettings": {
+                        "activeBackend": "qt6-multimedia",
+                        "automationMode": "random",
+                        "automationTime": 300,
+                        "fillMode": "fit",
+                        "mpvSocket": "/tmp/mpv-socket",
+                        "profile": "default",
+                        "volume": 1,
+                        "wallpapersFolder": "~/Pictures/Wallpapers"
+                    },
+                    "id": "plugin:video-wallpaper"
                 },
                 {
                     "colorizeDistroLogo": false,

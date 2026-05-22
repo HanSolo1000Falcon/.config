@@ -8,9 +8,9 @@
   "volume": 1,
   "wallpapersFolder": "/home/falcon1k/.config/rice-pictures/Wallpapers/Ultrawide",
   "thumbCacheReady": true,
-  "enabled": false,
+  "enabled": true,
   "DP-2": {
-    "currentWallpaper": "/home/falcon1k/.config/rice-pictures/Wallpapers/Ultrawide/LiveWallpaperTest.webm",
+    "currentWallpaper": "/home/falcon1k/.config/rice-pictures/Wallpapers/Ultrawide/SunriseAnimated.mp4",
     "noctaliaWallpaper": "/home/falcon1k/.config/rice-pictures/Wallpapers/Ultrawide/NatureTwo.jpg",
     "isPlaying": true,
     "isMuted": true
