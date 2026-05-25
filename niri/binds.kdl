@@ -9,7 +9,7 @@ binds {
   Mod+T { spawn "kitty"; }
   Mod+W { spawn-sh "fish -lc zen"; }
   Mod+E { spawn "thunar"; }
-  Mod+R { spawn "vesktop"; }
+  Mod+R { spawn "equibop"; }
   Mod+Y { spawn "spotify-launcher"; }
 
   Mod+Alt+X { spawn "loginctl" "poweroff"; }
