@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# sadly couldnt make this a fish script cuz etc os-release is POSIX (fish on top tho)
+
 source /etc/os-release
 
 logo=$(
