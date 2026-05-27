@@ -1,103 +1,163 @@
-# Don't print a new line at the start of the prompt
-add_newline = false
-# Pipes ╰─ ╭─
-# Powerline symbols                                     
-# Wedges 🭧🭒 🭣🭧🭓
-# Random noise 🬖🬥🬔🬗
-# Cool stuff 󰜥   
+format = """\
+[╭╴](fg:arrow)\
+$username\
+$os\
+$git_branch\
+(\
+    at \
+    $directory\
+)\
+$fill $cmd_duration $time\
+(\
+    via \
+    $python\
+    $conda\
+    $nodejs\
+    $c\
+    $rust\
+    $java\
+)
+[╰─](fg:arrow)$character\
+"""
+# Add the modules you need
 
-# format = """
-# $directory $fill $git_branch $cmd_duration
-#  $character"""
-format = """
-$cmd_duration $directory$git_branch
-  $character"""
+# Disable the blank line at the start of the prompt
+add_newline = true
 
-[fill]
-symbol = '-'
-style = 'fg:245'
+palette = "normal"
 
-# Replace the "❯" symbol in the prompt with "➜"
-[character]                            # The name of the module we are configuring is "character"
-success_symbol = "[ ](bold fg:255)"
-error_symbol = "[ ](bold fg:249)"
-
-# Disable the package module, hiding it from the prompt completely
-[package]
-disabled = true
-
-[git_branch]
-style = "bg: 252"
-symbol = "󰘬"
-truncation_length = 12
-truncation_symbol = ""
-format = " 󰜥 [](bold fg:252)[$symbol $branch(:$remote_branch)](fg:235 bg:252)[ ](bold fg:252)"
-
-[git_commit]
-commit_hash_length = 4
-tag_symbol = " "
-
-[git_state]
-format = '[\($state( $progress_current of $progress_total)\)]($style) '
-cherry_pick = "[🍒 PICKING](bold red)"
-
-[git_status]
-conflicted = " 🏳 "
-ahead = " 🏎💨 "
-behind = " 😰 "
-diverged = " 😵 "
-untracked = " 🤷 ‍"
-stashed = " 📦 "
-modified = " 📝 "
-staged = '[++\($count\)](green)'
-renamed = " ✍️ "
-deleted = " 🗑 "
-
-[hostname]
-ssh_only = false
-format =  "[•$hostname](bg:252 bold fg:235)[](bold fg:252)"
-trim_at = ".companyname.com"
-disabled = false
-
-[line_break]
-disabled = false
-
-[memory_usage]
-disabled = true
-threshold = -1
-symbol = " "
-style = "bold dimmed green"
-
-[time]
-disabled = true
-format = '🕙[\[ $time \]]($style) '
-time_format = "%T"
+[palettes.normal]
+arrow = "#B3BCFD"
+os = "#B3BCFD"
+os_admin = "#B3BCFD"
+directory = "#B3BCFD"
+time = "#B3BCFD"
+node = "#a5e6ba"
+git = "#f17f29"
+git_status = "#DFEBED"
+python = "#edf67d"
+conda = "#70e000"
+java = "#F86279"
+rust = "#ffdac6"
+clang = "#caf0f8"
+duration = "#ce4257"
+text_color = "#EDF2F4"
+text_light = "#26272A"
 
 [username]
-style_user = "bold bg:252 fg:235"
-style_root = "red bold"
-format = "[](bold fg:252)[$user]($style)"
+style_user = 'bold os'
+style_root = 'bold os_admin'
+format = '[  $user](fg:$style) '
 disabled = false
 show_always = true
 
+[os]
+format = "on [($name)]($style) "
+style = "bold blue"
+disabled = true
+
+[os.symbols]
+Alpine = " "
+Arch = " "
+Debian = " "
+EndeavourOS = " "
+Fedora = " "
+Linux = " "
+Macos = " "
+Manjaro = " "
+Mint = " "
+NixOS = " "
+openSUSE = " "
+Pop = " "
+SUSE = " "
+Ubuntu = " "
+Windows = " "
+
+[character]
+success_symbol = "[󰍟](fg:arrow)"
+error_symbol = "[󰍟](fg:red)"
+
 [directory]
-home_symbol = " "
-read_only = "  "
-style = "bg:255 fg:black"
+format = "[$path](bold $style)[$read_only]($read_only_style) "
 truncation_length = 2
-truncation_symbol = ".../"
-format = '[](bold fg:255)[󰉋 → $path]($style)[](bold fg:255)'
+style = "fg:directory"
+read_only_style = "fg:directory"
+before_repo_root_style = "fg:directory"
+truncation_symbol = "…/"
+truncate_to_repo = true
+read_only = "  "
 
+[time]
+disabled = false
+format = "[󱑈 $time]($style)"
+time_format = "%H:%M"
+style = "bold fg:time"
 
-[directory.substitutions]
-"Desktop" = "  "
-"Documents" = "  "
-"Downloads" = "  "
-"Music" = " 󰎈 "
-"Pictures" = "  "
-"Videos" = "  "
-"GitHub" = " 󰊤 "
 
 [cmd_duration]
-min_time = 0
-format = '[](bold fg:252)[󰪢 $duration](bold bg:252 fg:235)[](bold fg:252)'
+disabled = false
+format = "took [ $duration]($style) "
+style = "bold fg:duration"
+min_time = 500
+
+[git_branch]
+format = "via [$symbol$branch]($style) "
+style = "bold fg:git"
+symbol = " "
+
+[git_status]
+format = '[ $all_status$ahead_behind ]($style)'
+style = "fg:text_color bg:git"
+disabled = true
+
+[docker_context]
+disabled = false
+symbol = " "
+
+[package]
+disabled = false
+
+[fill]
+symbol = " "
+
+[nodejs]
+format = "[ $symbol$version ]($style)"
+style = "bg:node fg:text_light"
+symbol = " "
+version_format = "${raw}"
+disabled = false
+
+[python]
+disabled = false
+format = '[ ${symbol}${pyenv_prefix}(${version})( \($virtualenv\)) ]($style)'
+symbol = " "
+version_format = "${raw}"
+style = "bg:python fg:text_light"
+
+[conda]
+format = "[ $symbol$environment ]($style)"
+style = "bg:conda fg:text_light"
+ignore_base = false
+disabled = false
+symbol = " "
+
+[java]
+format = "[ $symbol$version ]($style)"
+style = "bg:java fg:text_light"
+version_format = "${raw}"
+symbol = " "
+disabled = false
+
+[c]
+format = "[ $symbol($version(-$name)) ]($style)"
+style = "bg:clang fg:text_light"
+symbol = " "
+version_format = "${raw}"
+disabled = false
+
+[rust]
+format = "[ $symbol$version ]($style)"
+style = "bg:rust fg:text_light"
+symbol = " "
+version_format = "${raw}"
+disabled = false
