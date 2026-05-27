@@ -4,6 +4,7 @@
 alias cls clear
 alias larp-larp-larp-sahur "fastfetch --logo ~/.config/fastfetch/larp-larp-larp-sahur-ascii.txt"
 alias clearfetch="clear;fastfetch"
+alias clf="clear;fastfetch"
 
 if status is-interactive
     set fish_greeting
