@@ -12,7 +12,9 @@ binds {
   Mod+R { spawn "equibop"; }
   Mod+Y { spawn "spotify-launcher"; }
 
-  Mod+Alt+X { spawn "loginctl" "poweroff"; }
+  Mod+D { spawn "ydotool" "key" "29:1" "42:1" "32:1" "32:0" "42:0" "29:0"; }
+
+  Mod+Alt+X { spawn "poweroff"; }
 
   Mod+C { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "command"; }
 
