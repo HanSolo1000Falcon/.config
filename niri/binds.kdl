@@ -11,6 +11,7 @@ binds {
   Mod+E { spawn "thunar"; }
   Mod+R { spawn "equibop"; }
   Mod+Y { spawn "spotify-launcher"; }
+  Mod+S { spawn "steam"; }
 
   Mod+D { spawn "ydotool" "key" "29:1" "42:1" "32:1" "32:0" "42:0" "29:0"; }
 

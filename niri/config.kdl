@@ -24,7 +24,7 @@ spawn-at-startup "qs" "-c" "noctalia-shell"
 
 output "ASUSTek COMPUTER INC VG34VQL3A TCLMDW016318" {
   mode "3440x1440@180.000" // Normal
- // mode "1920x1080@119.879" // Playing games on the couch with dad
+//  mode "1920x1080@119.879" // Playing games on the couch with dad
 }
 
 overview {
