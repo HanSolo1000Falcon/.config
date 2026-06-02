@@ -13,7 +13,7 @@ binds {
   Mod+Y { spawn "spotify-launcher"; }
   Mod+S { spawn "steam"; }
 
-  Mod+D { spawn "ydotool" "key" "29:1" "42:1" "32:1" "32:0" "42:0" "29:0"; }
+  Mod+D { spawn "~/.config/niri/deafen.fish"; }
 
   Mod+Alt+X { spawn "poweroff"; }
 

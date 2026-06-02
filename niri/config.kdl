@@ -17,7 +17,8 @@ environment {
   QT_QPA_PLATFORM "wayland"
   ELECTRON_OZONE_PLATFORM_HINT "auto"
   EDITOR "nvim"
-  MOZ_ENABLE_WAYLAND "1" 
+  MOZ_ENABLE_WAYLAND "1"
+  YDOTOOL_SOCKET "/run/user/1000/.ydotool_socket"
 }
 
 spawn-at-startup "qs" "-c" "noctalia-shell"
