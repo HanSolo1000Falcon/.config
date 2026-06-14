@@ -7,7 +7,7 @@
   "profile": "default",
   "volume": 1,
   "wallpapersFolder": "/home/falcon1k/.config/rice-pictures/Wallpapers/Ultrawide",
-  "thumbCacheReady": true,
+  "thumbCacheReady": false,
   "enabled": true,
   "DP-2": {
     "currentWallpaper": "/home/falcon1k/.config/rice-pictures/Wallpapers/Ultrawide/SunriseAnimated.mp4",
@@ -16,4 +16,3 @@
     "isMuted": true
   }
 }
-
