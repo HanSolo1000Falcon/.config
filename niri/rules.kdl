@@ -14,6 +14,12 @@ window-rule {
 }
 
 window-rule {
+  match app-id="zed"
+  open-maximized true
+  open-fullscreen false
+}
+
+window-rule {
   match app-id="kitty"
   match app-id="vesktop"
   match app-id="equibop"

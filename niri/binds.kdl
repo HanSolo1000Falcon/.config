@@ -12,6 +12,7 @@ binds {
   Mod+R { spawn "equibop"; }
   Mod+Y { spawn "spotify-launcher"; }
   Mod+S { spawn "steam"; }
+  Mod+Z { spawn "zeditor"; }
 
   Mod+D { spawn "~/.config/niri/deafen.fish"; }
 
@@ -46,7 +47,7 @@ binds {
 
   Mod+Shift+S { toggle-window-floating; }
 
-  Mod+Shift+W { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "toggle"; } 
+  Mod+Shift+W { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "toggle"; }
 
   XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
   XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
