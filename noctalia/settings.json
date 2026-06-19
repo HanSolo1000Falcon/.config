@@ -324,7 +324,7 @@
         "inactiveIndicators": false,
         "indicatorColor": "primary",
         "indicatorOpacity": 0.6,
-        "indicatorThickness": 3,
+        "indicatorThickness": 6,
         "launcherIcon": "",
         "launcherIconColor": "none",
         "launcherPosition": "end",
@@ -353,7 +353,7 @@
         "clockStyle": "custom",
         "compactLockScreen": false,
         "dimmerOpacity": 0,
-        "enableBlurBehind": true,
+        "enableBlurBehind": false,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": false,
         "enableShadows": true,
@@ -659,21 +659,33 @@
             {
                 "enabled": true,
                 "id": "gtk"
+            },
+            {
+                "enabled": true,
+                "id": "zed"
+            },
+            {
+                "enabled": true,
+                "id": "cava"
+            },
+            {
+                "enabled": true,
+                "id": "ghostty"
             }
         ],
         "enableUserTheming": true
     },
     "ui": {
-        "boxBorderEnabled": false,
+        "boxBorderEnabled": true,
         "fontDefault": "Symbols Nerd Font Mono",
         "fontDefaultScale": 1,
         "fontFixed": "Symbols Nerd Font Mono",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.6,
+        "panelBackgroundOpacity": 0.7000000000000001,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": false,
         "settingsPanelMode": "attached",
-        "settingsPanelSideBarCardStyle": false,
+        "settingsPanelSideBarCardStyle": true,
         "tooltipsEnabled": true,
         "translucentWidgets": true
     },
