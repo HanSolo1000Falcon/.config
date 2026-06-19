@@ -1,4 +1,5 @@
 alias fastfetch ~/.config/fish/fastfetchwrapper.sh
+alias supac ~/.config/fish/supac.sh
 alias cls clear
 alias clearfetch "clear;fastfetch"
 alias clf "clear;fastfetch"

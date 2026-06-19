@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "icon_theme": "Catppuccin Frappé",
+  "git_panel": {
+    "dock": "right"
+  },
   "terminal": {
     "shell": {
       "program": "bash",
@@ -33,6 +37,6 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "One Dark",
+    "dark": "Catppuccin Frappé",
   },
 }
