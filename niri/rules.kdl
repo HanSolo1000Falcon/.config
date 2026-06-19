@@ -21,8 +21,5 @@ window-rule {
 window-rule {
   match app-id="kitty"
   match app-id="ghostty"
-  match app-id="vesktop"
-  match app-id="equibop"
-  match app-id="Spotify"
   opacity 0.7
 }
