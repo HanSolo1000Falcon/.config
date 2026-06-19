@@ -7,9 +7,8 @@ hotkey-overlay {
 }
 
 cursor {
-  xcursor-theme "Bibata-Modern-Classic"
-  xcursor-size 24
-  hide-when-typing
+    xcursor-theme "SniperCursor"
+    xcursor-size 24
 }
 
 environment {

@@ -392,7 +392,7 @@
         ],
         "lockScreenTint": 0.5,
         "passwordChars": true,
-        "radiusRatio": 0.5,
+        "radiusRatio": 0,
         "reverseScroll": false,
         "scaleRatio": 1.2,
         "screenRadiusRatio": 1.5,
