@@ -6,11 +6,6 @@ hotkey-overlay {
   skip-at-startup
 }
 
-cursor {
-    xcursor-theme "SniperCursor"
-    xcursor-size 24
-}
-
 environment {
   QT_QPA_PLATFORMTHEME "qt6ct"
   QT_QPA_PLATFORM "wayland"
