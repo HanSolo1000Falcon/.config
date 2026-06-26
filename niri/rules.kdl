@@ -9,6 +9,7 @@ window-rule {
 
 window-rule {
   match app-id="gorilla-mod-manager"
+  match app-id="gorilla-cheats"
   open-floating true
 }
 
