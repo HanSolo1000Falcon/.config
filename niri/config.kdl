@@ -1,4 +1,5 @@
 spawn-at-startup "xwayland-satellite"
+spawn-at-startup "easyeffects --gapplication-service"
 
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/%Y-%m-%d %H-%M-%S.png"

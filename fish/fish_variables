@@ -3,7 +3,7 @@
 SETUVAR --export BloonsTD6:/home/falcon1k/\x2elocal/share/Steam/steamapps/common/BloonsTD6
 SETUVAR --export CC:clang
 SETUVAR --export CXX:clang\x2b\x2b
-SETUVAR --export DOTNET_ROOT:/home/falcon1k/\x2edotnet
+SETUVAR --export DOTNET_ROOT:/usr/share/dotnet/
 SETUVAR --export GTK_APPLICATION_PREFER_DARK_THEME:1
 SETUVAR --export GTK_THEME:Adwaita\x3adark
 SETUVAR --export SHUTDOWN_COMMAND:playerctl\x1eplay\x2dpause
