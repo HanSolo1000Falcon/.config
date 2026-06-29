@@ -27,10 +27,6 @@ layout {
     proportion 0.5
   }
 
-  border {
-    off
-  }
-
   shadow {
     on
     softness 15

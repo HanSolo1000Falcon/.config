@@ -677,7 +677,7 @@
         "enableUserTheming": true
     },
     "ui": {
-        "boxBorderEnabled": true,
+        "boxBorderEnabled": false,
         "fontDefault": "Terminus",
         "fontDefaultScale": 1,
         "fontFixed": "Terminus",
