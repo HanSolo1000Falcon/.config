@@ -682,7 +682,7 @@
         "fontDefaultScale": 1,
         "fontFixed": "Terminus",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.85,
+        "panelBackgroundOpacity": 0.8,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": false,
         "settingsPanelMode": "attached",
