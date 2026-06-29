@@ -16,16 +16,16 @@
         "enableWindowsSearch": true,
         "iconMode": "tabler",
         "ignoreMouseInput": false,
-        "overviewLayer": false,
+        "overviewLayer": true,
         "pinnedApps": [
         ],
-        "position": "top_center",
+        "position": "center",
         "screenshotAnnotationTool": "",
         "showCategories": true,
         "showIconBackground": false,
         "sortByMostUsed": true,
         "terminalCommand": "kitty -e",
-        "viewMode": "list"
+        "viewMode": "grid"
     },
     "audio": {
         "mprisBlacklist": [
@@ -55,7 +55,7 @@
         "frameThickness": 8,
         "hideOnOverview": false,
         "marginHorizontal": 500,
-        "marginVertical": 6,
+        "marginVertical": 0,
         "middleClickAction": "settings",
         "middleClickCommand": "",
         "middleClickFollowMouse": false,
@@ -71,21 +71,34 @@
         "rightClickFollowMouse": true,
         "screenOverrides": [
         ],
-        "showCapsule": true,
+        "showCapsule": false,
         "showOnWorkspaceSwitch": true,
-        "showOutline": true,
+        "showOutline": false,
         "useSeparateOpacity": false,
         "widgetSpacing": 6,
         "widgets": {
             "center": [
                 {
-                    "clockColor": "none",
-                    "customFont": "",
-                    "formatHorizontal": "HH:mm:ss dddd, MMM dd",
-                    "formatVertical": "h:mm AP - dd MM",
-                    "id": "Clock",
-                    "tooltipFormat": "h:mm AP ddd, MMM dd",
-                    "useCustomFont": false
+                    "compactMode": false,
+                    "hideMode": "hidden",
+                    "hideWhenIdle": false,
+                    "id": "MediaMini",
+                    "maxWidth": 1000,
+                    "panelShowAlbumArt": true,
+                    "scrollingMode": "always",
+                    "showAlbumArt": true,
+                    "showArtistFirst": true,
+                    "showProgressRing": true,
+                    "showVisualizer": false,
+                    "textColor": "none",
+                    "useFixedWidth": false,
+                    "visualizerType": "mirrored"
+                },
+                {
+                    "colorName": "primary",
+                    "hideWhenIdle": true,
+                    "id": "AudioVisualizer",
+                    "width": 300
                 }
             ],
             "left": [
@@ -121,20 +134,13 @@
                     "unfocusedIconsOpacity": 1
                 },
                 {
-                    "compactMode": false,
-                    "hideMode": "hidden",
-                    "hideWhenIdle": false,
-                    "id": "MediaMini",
-                    "maxWidth": 1000,
-                    "panelShowAlbumArt": true,
-                    "scrollingMode": "always",
-                    "showAlbumArt": true,
-                    "showArtistFirst": true,
-                    "showProgressRing": true,
-                    "showVisualizer": true,
-                    "textColor": "none",
-                    "useFixedWidth": false,
-                    "visualizerType": "linear"
+                    "clockColor": "none",
+                    "customFont": "",
+                    "formatHorizontal": "HH:mm:ss dddd, MMM dd",
+                    "formatVertical": "h:mm AP - dd MM",
+                    "id": "Clock",
+                    "tooltipFormat": "h:mm AP ddd, MMM dd",
+                    "useCustomFont": false
                 }
             ],
             "right": [
@@ -168,15 +174,6 @@
                     "id": "Battery",
                     "showNoctaliaPerformance": false,
                     "showPowerProfiles": false
-                },
-                {
-                    "defaultSettings": {
-                        "group": "",
-                        "platform": "github",
-                        "refreshInterval": 60,
-                        "repo": ""
-                    },
-                    "id": "plugin:git-companion"
                 },
                 {
                     "defaultSettings": {
@@ -395,7 +392,7 @@
         "radiusRatio": 0,
         "reverseScroll": false,
         "scaleRatio": 1.2,
-        "screenRadiusRatio": 1.5,
+        "screenRadiusRatio": 2,
         "shadowDirection": "bottom_right",
         "shadowOffsetX": 2,
         "shadowOffsetY": 3,
@@ -671,21 +668,25 @@
             {
                 "enabled": true,
                 "id": "ghostty"
+            },
+            {
+                "enabled": true,
+                "id": "foot"
             }
         ],
         "enableUserTheming": true
     },
     "ui": {
         "boxBorderEnabled": true,
-        "fontDefault": "Symbols Nerd Font Mono",
+        "fontDefault": "Terminus",
         "fontDefaultScale": 1,
-        "fontFixed": "Symbols Nerd Font Mono",
+        "fontFixed": "Terminus",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.7000000000000001,
+        "panelBackgroundOpacity": 0.85,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": false,
         "settingsPanelMode": "attached",
-        "settingsPanelSideBarCardStyle": true,
+        "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true,
         "translucentWidgets": true
     },
