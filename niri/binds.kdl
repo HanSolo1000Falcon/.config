@@ -15,6 +15,7 @@ binds {
   Mod+Z { spawn "zeditor"; }
 
   Mod+D { spawn "~/.config/niri/deafen.fish"; }
+  Mod+Shift+M { spawn "autoclick.sh" "1" "0xC0" "50"; }
 
   Mod+Alt+X { spawn "poweroff"; }
 
