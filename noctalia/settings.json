@@ -50,7 +50,7 @@
         "density": "comfortable",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
-        "fontScale": 1.2000000000000002,
+        "fontScale": 1.6500000000000001,
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": false,
@@ -75,9 +75,15 @@
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": false,
-        "widgetSpacing": 6,
+        "widgetSpacing": 10,
         "widgets": {
             "center": [
+                {
+                    "colorName": "primary",
+                    "hideWhenIdle": true,
+                    "id": "AudioVisualizer",
+                    "width": 300
+                },
                 {
                     "compactMode": false,
                     "hideMode": "hidden",
@@ -87,7 +93,7 @@
                     "panelShowAlbumArt": true,
                     "scrollingMode": "always",
                     "showAlbumArt": true,
-                    "showArtistFirst": true,
+                    "showArtistFirst": false,
                     "showProgressRing": true,
                     "showVisualizer": false,
                     "textColor": "none",
@@ -103,16 +109,6 @@
             ],
             "left": [
                 {
-                    "colorizeSystemIcon": "primary",
-                    "colorizeSystemText": "none",
-                    "customIconPath": "",
-                    "enableColorization": true,
-                    "icon": "rocket",
-                    "iconColor": "none",
-                    "id": "Launcher",
-                    "useDistroLogo": true
-                },
-                {
                     "characterCount": 2,
                     "colorizeIcons": false,
                     "emptyColor": "secondary",
@@ -121,10 +117,10 @@
                     "followFocusedScreen": false,
                     "fontWeight": "bold",
                     "groupedBorderOpacity": 1,
-                    "hideUnoccupied": false,
+                    "hideUnoccupied": true,
                     "iconScale": 0.8,
                     "id": "Workspace",
-                    "labelMode": "index",
+                    "labelMode": "none",
                     "occupiedColor": "secondary",
                     "pillSize": 0.6,
                     "showApplications": false,
@@ -136,7 +132,7 @@
                 {
                     "clockColor": "none",
                     "customFont": "",
-                    "formatHorizontal": "HH:mm:ss dddd, MMM dd",
+                    "formatHorizontal": "dddd, MMMM dd HH:mm:ss",
                     "formatVertical": "h:mm AP - dd MM",
                     "id": "Clock",
                     "tooltipFormat": "h:mm AP ddd, MMM dd",
@@ -145,7 +141,17 @@
             ],
             "right": [
                 {
-                    "compactMode": true,
+                    "defaultSettings": {
+                        "customColor": "none",
+                        "showConditionIcon": true,
+                        "showTempUnit": true,
+                        "showTempValue": true,
+                        "tooltipOption": "everything"
+                    },
+                    "id": "plugin:weather-indicator"
+                },
+                {
+                    "compactMode": false,
                     "diskPath": "/",
                     "iconColor": "none",
                     "id": "SystemMonitor",
@@ -168,35 +174,12 @@
                 },
                 {
                     "deviceNativePath": "",
-                    "displayMode": "alwaysShow",
+                    "displayMode": "icon-always",
                     "hideIfIdle": false,
-                    "hideIfNotDetected": false,
+                    "hideIfNotDetected": true,
                     "id": "Battery",
                     "showNoctaliaPerformance": false,
                     "showPowerProfiles": false
-                },
-                {
-                    "defaultSettings": {
-                        "activeBackend": "qt6-multimedia",
-                        "automationMode": "random",
-                        "automationTime": 300,
-                        "fillMode": "fit",
-                        "mpvSocket": "/tmp/mpv-socket",
-                        "profile": "default",
-                        "volume": 1,
-                        "wallpapersFolder": "~/Pictures/Wallpapers"
-                    },
-                    "id": "plugin:video-wallpaper"
-                },
-                {
-                    "colorizeDistroLogo": false,
-                    "colorizeSystemIcon": "none",
-                    "colorizeSystemText": "none",
-                    "customIconPath": "",
-                    "enableColorization": false,
-                    "icon": "noctalia",
-                    "id": "ControlCenter",
-                    "useDistroLogo": false
                 }
             ]
         }
@@ -230,10 +213,10 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Monochrome",
+        "predefinedScheme": "Kanagawa",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": true
+        "useWallpaperColors": false
     },
     "controlCenter": {
         "cards": [
@@ -353,7 +336,7 @@
         "enableBlurBehind": false,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": false,
-        "enableShadows": true,
+        "enableShadows": false,
         "forceBlackScreenCorners": true,
         "iRadiusRatio": 1,
         "keybinds": {
@@ -678,21 +661,21 @@
     },
     "ui": {
         "boxBorderEnabled": false,
-        "fontDefault": "Terminus",
+        "fontDefault": "ComicShannsMono Nerd Font",
         "fontDefaultScale": 1,
-        "fontFixed": "Terminus",
+        "fontFixed": "ComicShannsMono Nerd Font",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.8,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": false,
-        "settingsPanelMode": "attached",
+        "settingsPanelMode": "window",
         "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true,
         "translucentWidgets": true
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/falcon1k/.config/rice-pictures/Wallpapers",
+        "directory": "/home/falcon1k/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
