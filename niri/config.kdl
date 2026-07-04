@@ -11,6 +11,7 @@ environment {
   QT_QPA_PLATFORM "wayland"
   ELECTRON_OZONE_PLATFORM_HINT "auto"
   EDITOR "nvim"
+  TERMINAL "foot"
   MOZ_ENABLE_WAYLAND "1"
   YDOTOOL_SOCKET "/run/user/1000/.ydotool_socket"
 }

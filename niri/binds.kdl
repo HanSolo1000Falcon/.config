@@ -4,15 +4,13 @@ binds {
 
   Print { screenshot; }
 
-  // Applications binds because I am lazy!
   Mod+Space { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
-  Mod+T { spawn "foot"; }
+  Mod+T { spawn-sh "$TERMINAL"; }
   Mod+W { spawn-sh "fish -lc zen"; }
-  Mod+E { spawn "thunar"; }
+  Mod+E { spawn-sh "$TERMINAL xdg-open $HOME"; }
   Mod+R { spawn "equibop"; }
   Mod+Y { spawn "spotify-launcher"; }
   Mod+S { spawn "steam"; }
-  Mod+Z { spawn "zeditor"; }
 
   Mod+D { spawn "~/.config/niri/deafen.fish"; }
   Mod+Shift+M { spawn "autoclick.sh" "1" "0xC0" "50"; }
