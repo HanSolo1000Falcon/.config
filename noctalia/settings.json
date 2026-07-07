@@ -216,7 +216,7 @@
         "predefinedScheme": "Kanagawa",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -276,13 +276,59 @@
         }
     },
     "desktopWidgets": {
-        "enabled": false,
-        "gridSnap": false,
+        "enabled": true,
+        "gridSnap": true,
         "gridSnapScale": false,
         "monitorWidgets": [
             {
                 "name": "DP-2",
                 "widgets": [
+                    {
+                        "clockColor": "none",
+                        "clockStyle": "minimal",
+                        "customFont": "",
+                        "format": "h:m:s\\ndddd, MMMM dd yyyy",
+                        "id": "Clock",
+                        "roundedCorners": true,
+                        "scale": 1.8014797565402207,
+                        "showBackground": false,
+                        "useCustomFont": false,
+                        "x": 2970,
+                        "y": 1215
+                    },
+                    {
+                        "barWidth": 0.6,
+                        "bloomIntensity": 0.25,
+                        "customPrimaryColor": "#6750a4",
+                        "customSecondaryColor": "#625b71",
+                        "defaultSettings": {
+                            "barWidth": 0.6,
+                            "bloomIntensity": 0.5,
+                            "customPrimaryColor": "#6750A4",
+                            "customSecondaryColor": "#625B71",
+                            "fadeWhenIdle": false,
+                            "innerDiameter": 0.7,
+                            "ringOpacity": 0.8,
+                            "rotationSpeed": 0.5,
+                            "sensitivity": 1.5,
+                            "useCustomColors": false,
+                            "visualizationMode": 3,
+                            "waveThickness": 1
+                        },
+                        "fadeWhenIdle": true,
+                        "id": "plugin:fancy-audiovisualizer",
+                        "innerDiameter": 0.75,
+                        "ringOpacity": 0.6000000000000001,
+                        "rotationSpeed": 0.7000000000000001,
+                        "scale": 1.377013131198265,
+                        "sensitivity": 2.3,
+                        "showBackground": true,
+                        "useCustomColors": false,
+                        "visualizationMode": 3,
+                        "waveThickness": 0.3,
+                        "x": 2970,
+                        "y": 945
+                    }
                 ]
             }
         ],
@@ -341,7 +387,8 @@
         "iRadiusRatio": 1,
         "keybinds": {
             "keyDown": [
-                "Down"
+                "Down",
+                "Ctrl+J"
             ],
             "keyEnter": [
                 "Return",
@@ -351,16 +398,19 @@
                 "Esc"
             ],
             "keyLeft": [
-                "Left"
+                "Left",
+                "Ctrl+L"
             ],
             "keyRemove": [
                 "Del"
             ],
             "keyRight": [
-                "Right"
+                "Right",
+                "Ctrl+H"
             ],
             "keyUp": [
-                "Up"
+                "Up",
+                "Ctrl+K"
             ]
         },
         "language": "",
@@ -668,7 +718,7 @@
         "panelBackgroundOpacity": 0.8,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": false,
-        "settingsPanelMode": "window",
+        "settingsPanelMode": "attached",
         "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true,
         "translucentWidgets": true
