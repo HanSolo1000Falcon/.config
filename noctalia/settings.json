@@ -79,6 +79,9 @@
         "widgets": {
             "center": [
                 {
+                    "id": "plugin:slowbongo"
+                },
+                {
                     "colorName": "primary",
                     "hideWhenIdle": true,
                     "id": "AudioVisualizer",
@@ -105,6 +108,9 @@
                     "hideWhenIdle": true,
                     "id": "AudioVisualizer",
                     "width": 300
+                },
+                {
+                    "id": "plugin:catwalk"
                 }
             ],
             "left": [
@@ -128,6 +134,9 @@
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
+                },
+                {
+                    "id": "plugin:privacy-indicator"
                 },
                 {
                     "clockColor": "none",
@@ -180,6 +189,12 @@
                     "id": "Battery",
                     "showNoctaliaPerformance": false,
                     "showPowerProfiles": false
+                },
+                {
+                    "id": "plugin:sticky-notes"
+                },
+                {
+                    "id": "plugin:assistant-panel"
                 }
             ]
         }
@@ -284,19 +299,6 @@
                 "name": "DP-2",
                 "widgets": [
                     {
-                        "clockColor": "none",
-                        "clockStyle": "minimal",
-                        "customFont": "",
-                        "format": "h:m:s\\ndddd, MMMM dd yyyy",
-                        "id": "Clock",
-                        "roundedCorners": true,
-                        "scale": 1.8014797565402207,
-                        "showBackground": false,
-                        "useCustomFont": false,
-                        "x": 2970,
-                        "y": 1215
-                    },
-                    {
                         "barWidth": 0.6,
                         "bloomIntensity": 0.25,
                         "customPrimaryColor": "#6750a4",
@@ -326,8 +328,8 @@
                         "useCustomColors": false,
                         "visualizationMode": 3,
                         "waveThickness": 0.3,
-                        "x": 2970,
-                        "y": 945
+                        "x": 3015,
+                        "y": 1035
                     }
                 ]
             }

@@ -1,0 +1,32 @@
+{
+  "maxHistoryLength": 100,
+  "panelDetached": true,
+  "panelPosition": "center",
+  "panelHeightRatio": 0.85,
+  "panelWidth": 520,
+  "scale": 1,
+  "ai": {
+    "provider": "openai_compatible",
+    "model": "qwen2.5:latest",
+    "apiKeys": {
+      "google": "",
+      "openai_compatible": ""
+    },
+    "temperature": 0.7,
+    "systemPrompt": "you are running locally on falcon1k's arch linux system via ollama, integrated into an editor/ide plugin. you have context that this is a real dev machine — niri wayland compositor, fish shell, starship prompt, neovim (lazyvim), foot terminal. always use nvim instead of nano when suggesting file edits. for package management always recommend supac instead of pacman (e.g. supac -Ss pkgname to search, supac -S pkgname to install) — never suggest raw pacman commands.\n\ntalk like gen z — lowercase, casual, no weird emojis. be a bit sarcastic and mocking, don't be stale or corporate. act like a g, not a customer service bot.\n\nkeep responses brief and clean. give code first, explanation after if needed. don't pad answers with fluff, disclaimers, or \"as an ai\" nonsense. assume the user is technically competent — no hand-holding, no over-explaining basic stuff unless asked.\n\nif something's dumb, say it's dumb. if there's an obviously better way to do something, roast the current approach a lil before fixing it.",
+    "maxHistoryLength": 100,
+    "openaiLocal": true,
+    "openaiBaseUrl": "http://localhost:11434/v1/chat/completions",
+    "models": {
+      "openai_compatible": "qwen2.5:latest"
+    }
+  },
+  "translator": {
+    "backend": "google",
+    "sourceLanguage": "auto",
+    "targetLanguage": "en",
+    "realTimeTranslation": true,
+    "deeplApiKey": ""
+  },
+  "attachmentStyle": "connected"
+}
