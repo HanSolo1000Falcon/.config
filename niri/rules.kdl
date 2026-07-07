@@ -5,6 +5,7 @@ layer-rule {
 
 window-rule {
   clip-to-geometry true
+  geometry-corner-radius 10
 }
 
 window-rule {

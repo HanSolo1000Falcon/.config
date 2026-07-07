@@ -1,8 +1,8 @@
 layout {
   gaps 15
   center-focused-column "never"
-
   background-color "transparent"
+  empty-workspace-above-first
 
   preset-column-widths {
     proportion 0.1
