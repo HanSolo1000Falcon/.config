@@ -6,7 +6,7 @@ binds {
 
   Mod+Space { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
   Mod+T { spawn-sh "$TERMINAL"; }
-  Mod+W { spawn-sh "fish -lc zen"; }
+  Mod+W { spawn-sh "fish -lc zen-browser"; }
   Mod+E { spawn-sh "$TERMINAL xdg-open $HOME"; }
   Mod+R { spawn "equibop"; }
   Mod+Y { spawn "spotify-launcher"; }
