@@ -10,7 +10,6 @@ binds {
   Mod+E { spawn-sh "$TERMINAL xdg-open $HOME"; }
   Mod+R { spawn "equibop"; }
   Mod+Y { spawn "spotify-launcher"; }
-  Mod+S { spawn "steam"; }
 
   Mod+D { spawn "~/.config/niri/deafen.fish"; }
   Mod+Shift+M { spawn "autoclick.sh" "1" "0xC0" "50"; }
