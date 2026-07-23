@@ -763,6 +763,10 @@
             {
                 "enabled": true,
                 "id": "zenBrowser"
+            },
+            {
+                "enabled": true,
+                "id": "starship"
             }
         ],
         "enableUserTheming": true
