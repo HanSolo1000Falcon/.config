@@ -1,0 +1,14 @@
+remote = "https://github.com/hansolo1000falcon/.config.git"
+add = [
+    "niri",
+    "noctalia",
+    "fastfetch",
+    "fish",
+    "kitty",
+    "starship.toml",
+    "fsysutils",
+    "rice-pictures",
+    "zed",
+    "nvim",
+    "foot",
+]
