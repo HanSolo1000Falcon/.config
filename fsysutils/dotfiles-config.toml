@@ -1,1 +1,4 @@
 remote = "https://github.com/hansolo1000falcon/.config.git"
+
+[custom_locations]
+noctalia = "/home/falcon1k/.local/state/noctalia"
