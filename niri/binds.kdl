@@ -4,7 +4,7 @@ binds {
 
   Print { screenshot; }
 
-  Mod+Space { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+  Mod+Space { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
   Mod+T { spawn-sh "$TERMINAL"; }
   Mod+W { spawn-sh "fish -lc zen-browser"; }
   Mod+E { spawn-sh "xdg-open $HOME"; }
@@ -12,13 +12,11 @@ binds {
   Mod+Y { spawn "spotify-launcher"; }
 
   Mod+D { spawn "~/.config/niri/deafen.fish"; }
-  Mod+Shift+M { spawn "autoclick.sh" "1" "0xC0" "50"; }
 
   Mod+Alt+X { spawn "poweroff"; }
 
-  Mod+C { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "command"; }
 
-  Mod+Alt+L { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
+  Mod+Alt+L { spawn "noctalia" "msg" "session" "lock"; }
 
   Mod+Shift+P { spawn "playerctl" "play-pause"; }
   Mod+Shift+N { spawn "playerctl" "next"; }
@@ -44,8 +42,6 @@ binds {
   Mod+Alt+F { fullscreen-window; }
 
   Mod+Shift+S { toggle-window-floating; }
-
-  Mod+Shift+W { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "toggle"; }
 
   XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
   XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
