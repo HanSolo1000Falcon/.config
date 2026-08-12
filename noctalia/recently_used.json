@@ -1,5 +1,6 @@
 {
   "Applications": [
+    "/usr/share/applications/kitty.desktop",
     "/usr/share/applications/thunar.desktop",
     "/home/falcon1k/.local/share/applications/jetbrains-rustrover-10bb0ebb-896c-491e-a10d-822a2cdf29dd.desktop",
     "/home/falcon1k/.local/share/applications/org.vinegarhq.Sober.desktop"

@@ -142,6 +142,10 @@ niri_overview_type_to_launch_enabled = true
 password_style = "random"
 show_location = false
 
+    [shell.greeter_sync]
+    auto_sync = true
+    privilege_command = "foot -e pkexec"
+
     [shell.launcher]
     app_grid = true
 
