@@ -12,6 +12,3 @@ if not set -q ZED_TERM
 end
 
 starship init fish | source
-
-fish_add_path ~/.tarball-installations/zen
-fish_add_path ~/.local/bin

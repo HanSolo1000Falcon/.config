@@ -1,7 +1,7 @@
 function fastfetch
-    if test -f /etc/arch-release
-        command fastfetch --logo arch_small $argv
+    if string match -q '*cachyos*' (hostname)
+        /usr/bin/fastfetch --logo "$HOME/.config/fastfetch/cachyos-minimal.txt"
     else
-        command fastfetch $argv
+        fastfetch
     end
 end
