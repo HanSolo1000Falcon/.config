@@ -6,6 +6,19 @@ order = [ "default" ]
     [bar.default]
     background_opacity = 0.99999997764825821
     contact_shadow = true
+    end = [
+        "lyrics",
+        "spacer_5",
+        "cpu",
+        "temp",
+        "ram",
+        "spacer_4",
+        "battery",
+        "control-center",
+        "bar",
+        "widget",
+        "widget_2"
+    ]
 
 [desktop_widgets]
 schema_version = 2
@@ -17,7 +30,8 @@ widget_order = [
     "desktop-widget-0000000000000006",
     "desktop-widget-0000000000000007",
     "desktop-widget-0000000000000008",
-    "desktop-widget-0000000000000009"
+    "desktop-widget-0000000000000009",
+    "desktop-widget-000000000000000a"
 ]
 
     [desktop_widgets.grid]
@@ -148,6 +162,17 @@ widget_order = [
 
         [desktop_widgets.widget.desktop-widget-0000000000000009.settings]
         background = false
+
+    [desktop_widgets.widget.desktop-widget-000000000000000a]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1619.0
+    cy = 599.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "goatnath/spotify-lyrics:lyrics-desktop"
 
 [lockscreen_widgets]
 enabled = true
@@ -331,7 +356,8 @@ enabled = [
     "yuuto/calculator",
     "nightwatch75/dns-switcher",
     "dotnetrob/cat",
-    "alexander/screen-toolkit"
+    "alexander/screen-toolkit",
+    "h465855hgg/lyrics"
 ]
 
 [shell]
@@ -368,3 +394,15 @@ directory = "/home/falcon1k/.config/rice-pictures/Wallpapers/random"
 
 [widget.clock]
 format = "{:%H:%M:%S %Y-%m-%d}"
+
+[widget.lyrics]
+hide_when_no_lyrics = true
+hide_when_paused = true
+show_artist = false
+show_cover = false
+show_glyph = false
+type = "h465855hgg/lyrics:lyrics"
+
+[widget.spacer_5]
+length = 60
+type = "spacer"
