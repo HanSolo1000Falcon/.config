@@ -9,7 +9,16 @@ order = [ "default" ]
 
 [desktop_widgets]
 schema_version = 2
-widget_order = [ "desktop-widget-0000000000000001" ]
+widget_order = [
+    "desktop-widget-0000000000000001",
+    "desktop-widget-0000000000000002",
+    "desktop-widget-0000000000000003",
+    "desktop-widget-0000000000000004",
+    "desktop-widget-0000000000000006",
+    "desktop-widget-0000000000000007",
+    "desktop-widget-0000000000000008",
+    "desktop-widget-0000000000000009"
+]
 
     [desktop_widgets.grid]
     cell_size = 16
@@ -35,18 +44,123 @@ widget_order = [ "desktop-widget-0000000000000001" ]
         mirrored = true
         show_when_idle = true
 
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 240.0
+    box_width = 480.0
+    cx = 2840.0
+    cy = 322.02764892578125
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.2617993950843811
+    type = "clock"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background = false
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 2814.2392578125
+    cy = 699.5
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "calendar"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
+        background = false
+        background_opacity = 0.050000000000000003
+        font_family = ""
+        show_events = false
+        show_week_numbers = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000004]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 408.0
+    cy = 1195.2965087890625
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = -0.2617993950843811
+    type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000004.settings]
+        background_opacity = 0.80000000000000004
+
+    [desktop_widgets.widget.desktop-widget-0000000000000006]
+    box_height = 240.0
+    box_width = 400.0
+    cx = 254.794921875
+    cy = 1003.9230346679688
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = -0.52359879016876221
+    type = "sysmon"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000006.settings]
+        stat = "cpu_usage"
+        stat2 = "cpu_temp"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000007]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 574.95733642578125
+    cy = 996.0096435546875
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.2617993950843811
+    type = "volume"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000008]
+    box_height = 272.0
+    box_width = 3440.0
+    cx = 1720.0
+    cy = 1304.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000008.settings]
+        background = false
+        bands = 64
+        centered = false
+        color_2 = "primary"
+        mirrored = true
+        show_when_idle = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000009]
+    box_height = 384.0
+    box_width = 576.0
+    cx = 2830.584716796875
+    cy = 1145.72314453125
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = -0.2617993950843811
+    type = "weather"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000009.settings]
+        background = false
+
 [lockscreen_widgets]
 enabled = true
 schema_version = 2
 widget_order = [
     "lockscreen-login-box@WL-1",
     "lockscreen-login-box@DP-1",
-    "lockscreen-widget-0000000000000001",
     "lockscreen-widget-0000000000000002",
     "lockscreen-widget-0000000000000003",
     "lockscreen-widget-0000000000000004",
     "lockscreen-widget-0000000000000005",
-    "lockscreen-widget-0000000000000006"
+    "lockscreen-widget-0000000000000006",
+    "lockscreen-widget-0000000000000008"
 ]
 
     [lockscreen_widgets.grid]
@@ -107,21 +221,6 @@ widget_order = [
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
-    box_height = 320.0
-    box_width = 416.0
-    cx = 1720.0
-    cy = 904.0
-    output = "DP-1"
-    placement_height = 1440.0
-    placement_width = 3440.0
-    rotation = 0.0
-    type = "fancy_audio_visualizer"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
-        background = false
-        visualization_mode = "wave_rings"
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
     box_height = 0.0
@@ -198,13 +297,31 @@ widget_order = [
     output = "DP-1"
     placement_height = 1440.0
     placement_width = 3440.0
-    rotation = 0.0
+    rotation = 0.52359879016876221
     type = "sticker"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000006.settings]
         background = false
         image_path = "/home/falcon1k/.config/rice-pictures/ri.webp"
         opacity = 1.0
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000008]
+    box_height = 320.0
+    box_width = 400.0
+    cx = 1716.0
+    cy = 904.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000008.settings]
+        background = false
+        bands = 12
+        centered = true
+        mirrored = true
+        show_when_idle = true
 
 [plugins]
 enabled = [
@@ -238,13 +355,13 @@ directory = "/home/falcon1k/.config/rice-pictures/Wallpapers/random"
     interval_seconds = 1200
 
     [wallpaper.default]
-    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/8fk4iidmuo8f1.png"
+    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/6e4ca65cn2ih1.jpeg"
 
     [wallpaper.last]
-    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/8fk4iidmuo8f1.png"
+    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/6e4ca65cn2ih1.jpeg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/8fk4iidmuo8f1.png"
+    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/6e4ca65cn2ih1.jpeg"
 
     [wallpaper.monitors.WL-1]
     path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/r2spobrzft2f1.png"
