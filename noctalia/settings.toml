@@ -1,8 +1,11 @@
 config_version = 13
 
-[bar.default]
-background_opacity = 0.99999997764825821
-contact_shadow = true
+[bar]
+order = [ "default" ]
+
+    [bar.default]
+    background_opacity = 0.99999997764825821
+    contact_shadow = true
 
 [desktop_widgets]
 schema_version = 2
@@ -33,9 +36,18 @@ widget_order = [ "desktop-widget-0000000000000001" ]
         show_when_idle = true
 
 [lockscreen_widgets]
-enabled = false
+enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@WL-1", "lockscreen-login-box@DP-1" ]
+widget_order = [
+    "lockscreen-login-box@WL-1",
+    "lockscreen-login-box@DP-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000003",
+    "lockscreen-widget-0000000000000004",
+    "lockscreen-widget-0000000000000005",
+    "lockscreen-widget-0000000000000006"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -96,6 +108,104 @@ widget_order = [ "lockscreen-login-box@WL-1", "lockscreen-login-box@DP-1" ]
         show_unlock_hint = true
         show_weather = true
 
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 320.0
+    box_width = 416.0
+    cx = 1720.0
+    cy = 904.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "fancy_audio_visualizer"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        visualization_mode = "wave_rings"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1720.0
+    cy = 1078.5
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "label"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background = false
+        background_opacity = 0.0
+        background_radius = 8
+        color = "primary"
+        description = ""
+        font_family = ""
+        opacity = 1.0
+        title = "password is 123xyz"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 720.0
+    box_width = 432.0
+    cx = 1720.0
+    cy = 384.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "media_player"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        background = false
+        background_opacity = 0.0
+        layout = "vertical"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    box_height = 320.0
+    box_width = 608.0
+    cx = 304.0
+    cy = 160.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "sysmon"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
+        background = false
+        stat = "cpu_usage"
+        stat2 = "cpu_temp"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
+    box_height = 256.0
+    box_width = 480.0
+    cx = 3190.0
+    cy = 132.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "weather"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000005.settings]
+        background = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
+    box_height = 464.0
+    box_width = 848.0
+    cx = 2776.0
+    cy = 776.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "sticker"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000006.settings]
+        background = false
+        image_path = "/home/falcon1k/.config/rice-pictures/ri.webp"
+        opacity = 1.0
+
 [plugins]
 enabled = [
     "yuuto/arch-updater",
@@ -107,15 +217,18 @@ enabled = [
     "alexander/screen-toolkit"
 ]
 
-[shell.greeter_sync]
-auto_sync = false
-privilege_command = "kitty -e pkexec"
+[shell]
+polkit_agent = true
 
-[shell.panel]
-transparency_mode = "glass"
+    [shell.greeter_sync]
+    auto_sync = false
+    privilege_command = "kitty -e pkexec"
 
-[shell.screenshot]
-directory = "/home/falcon1k/Pictures/Screenshots"
+    [shell.panel]
+    transparency_mode = "glass"
+
+    [shell.screenshot]
+    directory = "/home/falcon1k/Pictures/Screenshots"
 
 [wallpaper]
 directory = "/home/falcon1k/.config/rice-pictures/Wallpapers/random"
@@ -125,10 +238,10 @@ directory = "/home/falcon1k/.config/rice-pictures/Wallpapers/random"
     interval_seconds = 1200
 
     [wallpaper.default]
-    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/r2spobrzft2f1.png"
+    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/8fk4iidmuo8f1.png"
 
     [wallpaper.last]
-    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/r2spobrzft2f1.png"
+    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/8fk4iidmuo8f1.png"
 
     [wallpaper.monitors.DP-1]
     path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/8fk4iidmuo8f1.png"

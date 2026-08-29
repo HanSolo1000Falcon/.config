@@ -1,5 +1,5 @@
 {
-  "change_serial": 54,
+  "change_serial": 58,
   "entries": [
     {
       "active": false,
@@ -572,8 +572,52 @@
         "urgency": "critical"
       },
       "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 57,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1788005622704,
+        "icon": null,
+        "id": 55,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1788005616704,
+        "summary": "succesfully liked my lockscreen",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 58,
+      "notification": {
+        "actions": [],
+        "app_name": "notify-send",
+        "body": "",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1788005623894,
+        "icon": null,
+        "id": 56,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1788005617894,
+        "summary": "succesfully liked my lockscreen",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
     }
   ],
-  "next_id": 54,
+  "next_id": 57,
   "version": 2
 }
