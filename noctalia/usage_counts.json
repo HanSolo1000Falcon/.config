@@ -1,0 +1,22 @@
+{
+  "Applications": {
+    "/home/falcon1k/.local/share/applications/jetbrains-rider-0646e609-7e83-4c01-a69e-c23fd91192de.desktop": 12,
+    "/usr/share/applications/cachyos-pi.desktop": 1,
+    "/usr/share/applications/code-oss.desktop": 3,
+    "/usr/share/applications/com.shellyorg.shelly.desktop": 1,
+    "/usr/share/applications/equibop.desktop": 1,
+    "/usr/share/applications/io.github.wivrn.wivrn.desktop": 2,
+    "/usr/share/applications/limine-snapper-restore.desktop": 1,
+    "/usr/share/applications/org.cachyos.KernelManager.desktop": 1,
+    "/usr/share/applications/org.gnome.Nautilus.desktop": 2,
+    "/usr/share/applications/proton-pass.desktop": 4,
+    "/usr/share/applications/sober.desktop": 7,
+    "/usr/share/applications/spotify-launcher.desktop": 1,
+    "/usr/share/applications/steam.desktop": 18,
+    "/usr/share/applications/zen.desktop": 1,
+    "/var/lib/flatpak/exports/share/applications/com.unity.UnityHub.desktop": 9,
+    "/var/lib/flatpak/exports/share/applications/io.bsmanager.bsmanager.desktop": 1,
+    "/var/lib/flatpak/exports/share/applications/org.vinegarhq.Sober.desktop": 5,
+    "/var/lib/flatpak/exports/share/applications/org.vinegarhq.Vinegar.desktop": 4
+  }
+}

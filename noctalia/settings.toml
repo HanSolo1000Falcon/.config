@@ -1,25 +1,8 @@
-config_version = 12
-
-[accessibility]
-ui_scale = 1.5000000149011612
+config_version = 13
 
 [bar.default]
-background_opacity = 0.79999998211860657
-center = [ "cat_2", "media", "cat" ]
-concave_edge_corners = false
-end = [ "cpu", "temp", "ram", "spacer_4", "battery", "control-center", "bar", "widget", "widget_2" ]
-font_family = "ComicShannsMono Nerd Font"
-margin_ends = 300
-radius = 0
-radius_bottom_left = 28
-radius_bottom_right = 28
-scale = 1.7000000178813934
-start = [ "workspaces", "dns-switcher", "spacer_2", "clock", "spacer_3", "weather" ]
-thickness = 40
-widget_spacing = 10
-
-    [bar.default.dead_zone.actions]
-    middle = "settings-toggle"
+background_opacity = 0.99999997764825821
+contact_shadow = true
 
 [desktop_widgets]
 schema_version = 2
@@ -37,6 +20,8 @@ widget_order = [ "desktop-widget-0000000000000001" ]
     cy = 104.0
     flip_y = true
     output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
     rotation = 0.0
     type = "audio_visualizer"
 
@@ -47,18 +32,10 @@ widget_order = [ "desktop-widget-0000000000000001" ]
         mirrored = true
         show_when_idle = true
 
-[location]
-auto_locate = true
-
 [lockscreen_widgets]
-enabled = true
+enabled = false
 schema_version = 2
-widget_order = [
-    "lockscreen-login-box@DP-1",
-    "lockscreen-widget-0000000000000001",
-    "lockscreen-widget-0000000000000002",
-    "lockscreen-widget-0000000000000003"
-]
+widget_order = [ "lockscreen-login-box@DP-1" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -71,6 +48,8 @@ widget_order = [
     cx = 1720.0
     cy = 1258.0
     output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
     rotation = 0.0
     type = "login_box"
 
@@ -90,125 +69,36 @@ widget_order = [
         show_unlock_hint = true
         show_weather = true
 
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
-    box_height = 480.0
-    box_width = 480.0
-    cx = 1720.0
-    cy = 720.0
-    output = "DP-1"
-    rotation = 0.0
-    type = "fancy_audio_visualizer"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
-        background = false
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
-    box_height = 0.0
-    box_width = 0.0
-    cx = 1720.0
-    cy = 329.0
-    output = "DP-1"
-    rotation = 0.0
-    type = "media_player"
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
-    box_height = 128.0
-    box_width = 272.0
-    cx = 1720.0
-    cy = 1040.0
-    output = "DP-1"
-    rotation = 0.0
-    type = "weather"
-
-[plugin_settings."yuuto/arch-updater"]
-aur_helper = "off"
-
 [plugins]
 enabled = [
     "yuuto/arch-updater",
     "noctalia/bongocat",
     "cleboost/jetbrains-provider",
     "yuuto/calculator",
-    "nzlov/daily-wallpaper",
     "nightwatch75/dns-switcher",
     "dotnetrob/cat",
     "alexander/screen-toolkit"
 ]
 
-[shell]
-avatar_path = "/home/falcon1k/.config/rice-pictures/ProfilePicture.png"
-font_family = "ComicShannsMono Nerd Font"
-niri_overview_type_to_launch_enabled = true
-password_style = "random"
-show_location = false
+[shell.greeter_sync]
+auto_sync = false
+privilege_command = "kitty -e pkexec"
 
-    [shell.greeter_sync]
-    auto_sync = true
-    privilege_command = "foot -e pkexec"
-
-    [shell.launcher]
-    app_grid = true
-
-[theme]
-source = "wallpaper"
-wallpaper_scheme = "m3-tonal-spot"
-
-    [theme.templates]
-    builtin_ids = [ "btop", "cava", "foot", "niri" ]
+[shell.panel]
+transparency_mode = "glass"
 
 [wallpaper]
-directory = "~/.config/rice-pictures/Wallpapers"
+directory = "/home/falcon1k/.config/rice-pictures/Wallpapers/random"
+
+    [wallpaper.automation]
+    enabled = true
+    interval_seconds = 1200
 
     [wallpaper.default]
-    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/daily-wallpaper/bing-en-us-2026-08-12.jpg"
+    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/o6leq3rtjfif1.png"
 
     [wallpaper.last]
-    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/daily-wallpaper/bing-en-us-2026-08-12.jpg"
+    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/o6leq3rtjfif1.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/daily-wallpaper/bing-en-us-2026-08-12.jpg"
-
-[widget.audio_visualizer]
-color_1 = "secondary"
-scale = 2.5
-
-[widget.bar]
-type = "yuuto/calculator:bar"
-
-[widget.cat]
-type = "noctalia/bongocat:cat"
-
-[widget.cat_2]
-type = "dotnetrob/cat:cat"
-
-[widget.clock]
-format = "{:%H:%M:%S %d/%m/%Y}"
-
-[widget.dns-switcher]
-type = "nightwatch75/dns-switcher:dns-switcher"
-
-[widget.media]
-anchor = true
-artist_first = true
-hide_when_no_media = true
-max_length = 800
-
-[widget.spacer_2]
-type = "spacer"
-
-[widget.spacer_3]
-type = "spacer"
-
-[widget.spacer_4]
-type = "spacer"
-
-[widget.widget]
-type = "yuuto/arch-updater:widget"
-
-[widget.widget_2]
-type = "alexander/screen-toolkit:widget"
-
-[widget.workspaces]
-hide_when_empty = true
-show_labels = false
-style = "focus_hint"
+    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/o6leq3rtjfif1.png"

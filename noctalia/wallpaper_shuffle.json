@@ -1,0 +1,22 @@
+{
+  "scopes": {
+    "global": {
+      "/home/falcon1k/.config/rice-pictures/Wallpapers": [
+        "/home/falcon1k/.config/rice-pictures/Wallpapers/daily-wallpaper/bing-en-us-2026-08-26.jpg",
+        "/home/falcon1k/.config/rice-pictures/Wallpapers/daily-wallpaper/bing-en-us-2026-08-29.jpg"
+      ],
+      "/home/falcon1k/.config/rice-pictures/Wallpapers/random": [
+        "/home/falcon1k/.config/rice-pictures/Wallpapers/random/o6leq3rtjfif1.png",
+        "/home/falcon1k/.config/rice-pictures/Wallpapers/random/zec66nwgox9d1.png",
+        "/home/falcon1k/.config/rice-pictures/Wallpapers/random/r2spobrzft2f1.png",
+        "/home/falcon1k/.config/rice-pictures/Wallpapers/random/kmwb0138hqvc1.png",
+        "/home/falcon1k/.config/rice-pictures/Wallpapers/random/6e4ca65cn2ih1.jpeg",
+        "/home/falcon1k/.config/rice-pictures/Wallpapers/random/nvtnyqyjg94f1.jpeg",
+        "/home/falcon1k/.config/rice-pictures/Wallpapers/random/tlqppmbn4soc1.png",
+        "/home/falcon1k/.config/rice-pictures/Wallpapers/random/mr7h6163ry3h1.png",
+        "/home/falcon1k/.config/rice-pictures/Wallpapers/random/zn8oyt5xqjxc1.png"
+      ]
+    }
+  },
+  "version": 2
+}

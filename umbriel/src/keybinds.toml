@@ -1,0 +1,48 @@
+[keybinds]
+"Mod+Q" = "window-close"
+"Mod+Ctrl+F" = "window-toggle-floating"
+"Mod+Shift+R" = "window-set-width:0.333"
+"Mod+R" = "window-set-width:0.5"
+"Mod+Ctrl+R" = "window-set-width:0.667"
+"Mod+Shift+F" = "window-toggle-maximize"
+"Mod+Alt+F" = "window-toggle-fullscreen"
+
+"Mod+Ctrl+Q" = "workspace-set-layout:scrolling"
+"Mod+Ctrl+W" = "workspace-set-layout:dwindle"
+"Mod+Ctrl+E" = "workspace-set-layout:master"
+
+"XF86AudioRaiseVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+"XF86AudioLowerVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+"XF86AudioMute" = "spawn:wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+
+"XF86AudioPlay" = { action = "spawn:playerctl play-pause", allow_when_locked = true }
+"XF86AudioNext" = "spawn:playerctl next"
+"XF86AudioPrev" = "spawn:playerctl previous"
+"Mod+Shift+P" = { action = "spawn:playerctl play-pause", allow_when_locked = true }
+"Mod+Shift+N" = "spawn:playerctl next"
+"Mod+Shift+B" = "spawn:playerctl previous"
+
+"XF86MonBrightnessUp" = "spawn:brightnessctl set +5%"
+"XF86MonBrightnessDown" = "spawn:brightnessctl set 5%-"
+
+"Mod+T" = "spawn:foot"
+"Mod+S" = "spawn:spotify-launcher"
+"Mod+E" = "spawn:equibop"
+"Mod+B" = "spawn:zen-browser"
+"Mod+F" = "spawn:xdg-open $HOME"
+"Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
+
+"Mod+Alt+X" = "spawn:poweroff"
+"Mod+Alt+L" = "spawn:noctalia msg session lock"
+
+"Mod+H" = "window-focus-left"
+"Mod+L" = "window-focus-right"
+"Mod+J" = "window-focus-down"
+"Mod+K" = "window-focus-up"
+
+"Mod+Shift+H" = "column-move-left"
+"Mod+Shift+L" = "column-move-right"
+
+"Mod+Tab" = "overview-toggle"
+"Mod+I" = "workspace-previous"
+"Mod+U" = "workspace-next"

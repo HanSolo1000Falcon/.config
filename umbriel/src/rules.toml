@@ -1,0 +1,16 @@
+[[window_rule]]
+default_width = 0.5
+blur = true
+blur_optimized = true
+
+[[window_rule]]
+match.app_id = "equibop"
+default_width = 0.667
+
+[[window_rule]]
+match.app_id = "Spotify"
+default_width = 0.333
+
+[[window_rule]]
+match.app_id = "foot"
+opacity = 0.80

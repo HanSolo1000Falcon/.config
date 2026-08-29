@@ -1,0 +1,5 @@
+[general]
+autostart = ["noctalia", "spotify-launcher", "equibop"]
+mod_key = "Super"
+xwayland = true
+show_cheatsheet = false
