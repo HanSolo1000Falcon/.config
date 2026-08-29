@@ -11,6 +11,9 @@
 "Mod+Ctrl+W" = "workspace-set-layout:dwindle"
 "Mod+Ctrl+E" = "workspace-set-layout:master"
 
+"Print" = "spawn:noctalia msg screenshot-region"
+"Mod+Print" = "spawn:noctalia msg screenshot-fullscreen"
+
 "XF86AudioRaiseVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
 "XF86AudioLowerVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
 "XF86AudioMute" = "spawn:wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
