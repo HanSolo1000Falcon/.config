@@ -4,7 +4,6 @@ config_version = 13
 order = [ "default" ]
 
     [bar.default]
-    background_opacity = 0.99999997764825821
     contact_shadow = true
     end = [ "spacer_5", "cpu", "temp", "ram", "spacer_4", "battery", "control-center", "bar", "widget", "widget_2" ]
 
@@ -27,9 +26,9 @@ widget_order = [
     visible = true
 
     [desktop_widgets.widget.desktop-widget-0000000000000001]
-    box_height = 144.0
-    box_width = 2304.0
-    cx = 1736.0
+    box_height = 208.0
+    box_width = 3440.0
+    cx = 1720.0
     cy = 104.0
     flip_y = true
     output = "DP-1"
@@ -40,7 +39,7 @@ widget_order = [
 
         [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
         background = false
-        bands = 48
+        bands = 64
         centered = false
         mirrored = true
         show_when_idle = true
@@ -118,10 +117,10 @@ widget_order = [
     type = "volume"
 
     [desktop_widgets.widget.desktop-widget-0000000000000008]
-    box_height = 272.0
+    box_height = 208.0
     box_width = 3440.0
     cx = 1720.0
-    cy = 1304.0
+    cy = 1336.0
     output = "DP-1"
     placement_height = 1440.0
     placement_width = 3440.0
@@ -157,11 +156,15 @@ widget_order = [
     "lockscreen-login-box@WL-1",
     "lockscreen-login-box@DP-1",
     "lockscreen-widget-0000000000000002",
-    "lockscreen-widget-0000000000000003",
-    "lockscreen-widget-0000000000000004",
-    "lockscreen-widget-0000000000000005",
     "lockscreen-widget-0000000000000006",
-    "lockscreen-widget-0000000000000008"
+    "lockscreen-widget-0000000000000009",
+    "lockscreen-widget-000000000000000a",
+    "lockscreen-widget-000000000000000b",
+    "lockscreen-widget-000000000000000c",
+    "lockscreen-widget-000000000000000d",
+    "lockscreen-widget-000000000000000e",
+    "lockscreen-widget-000000000000000f",
+    "lockscreen-widget-0000000000000010"
 ]
 
     [lockscreen_widgets.grid]
@@ -244,61 +247,15 @@ widget_order = [
         opacity = 1.0
         title = "password is 123xyz"
 
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
-    box_height = 720.0
-    box_width = 432.0
-    cx = 1720.0
-    cy = 384.0
-    output = "DP-1"
-    placement_height = 1440.0
-    placement_width = 3440.0
-    rotation = 0.0
-    type = "media_player"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
-        background = false
-        background_opacity = 0.0
-        layout = "vertical"
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
-    box_height = 320.0
-    box_width = 608.0
-    cx = 304.0
-    cy = 160.0
-    output = "DP-1"
-    placement_height = 1440.0
-    placement_width = 3440.0
-    rotation = 0.0
-    type = "sysmon"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
-        background = false
-        stat = "cpu_usage"
-        stat2 = "cpu_temp"
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
-    box_height = 256.0
-    box_width = 480.0
-    cx = 3190.0
-    cy = 132.0
-    output = "DP-1"
-    placement_height = 1440.0
-    placement_width = 3440.0
-    rotation = 0.0
-    type = "weather"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000005.settings]
-        background = false
-
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
-    box_height = 464.0
-    box_width = 848.0
-    cx = 2776.0
-    cy = 776.0
+    box_height = 480.0
+    box_width = 656.0
+    cx = 633.2005615234375
+    cy = 430.9532470703125
     output = "DP-1"
     placement_height = 1440.0
     placement_width = 3440.0
-    rotation = 0.52359879016876221
+    rotation = -0.2617993950843811
     type = "sticker"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000006.settings]
@@ -306,22 +263,117 @@ widget_order = [
         image_path = "/home/falcon1k/.config/rice-pictures/ri.webp"
         opacity = 1.0
 
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000008]
-    box_height = 320.0
-    box_width = 400.0
-    cx = 1716.0
-    cy = 904.0
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000009]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 488.0
+    cy = 1136.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = -0.2617993950843811
+    type = "media_player"
+
+    [lockscreen_widgets.widget.lockscreen-widget-000000000000000a]
+    box_height = 224.0
+    box_width = 416.0
+    cx = 324.13330078125
+    cy = 976.994873046875
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = -0.52359879016876221
+    type = "clock"
+
+    [lockscreen_widgets.widget.lockscreen-widget-000000000000000b]
+    box_height = 208.0
+    box_width = 384.0
+    cx = 630.90960693359375
+    cy = 952.2822265625
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.2617993950843811
+    type = "weather"
+
+    [lockscreen_widgets.widget.lockscreen-widget-000000000000000c]
+    box_height = 208.0
+    box_width = 3440.0
+    cx = 1720.0
+    cy = 1336.0
     output = "DP-1"
     placement_height = 1440.0
     placement_width = 3440.0
     rotation = 0.0
     type = "audio_visualizer"
 
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000008.settings]
+        [lockscreen_widgets.widget.lockscreen-widget-000000000000000c.settings]
         background = false
-        bands = 12
-        centered = true
-        mirrored = true
+        bands = 64
+        centered = false
+        show_when_idle = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-000000000000000d]
+    box_height = 800.0
+    box_width = 800.0
+    cx = 1720.0
+    cy = 651.5
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.0
+    type = "calendar"
+
+        [lockscreen_widgets.widget.lockscreen-widget-000000000000000d.settings]
+        background = false
+        show_events = false
+        show_week_numbers = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-000000000000000e]
+    box_height = 400.0
+    box_width = 608.0
+    cx = 2926.5947265625
+    cy = 623.86614990234375
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 0.2617993950843811
+    type = "sysmon"
+
+        [lockscreen_widgets.widget.lockscreen-widget-000000000000000e.settings]
+        stat = "cpu_usage"
+        stat2 = "cpu_temp"
+
+    [lockscreen_widgets.widget.lockscreen-widget-000000000000000f]
+    box_height = 352.0
+    box_width = 624.0
+    cx = 2751.259765625
+    cy = 357.24554443359375
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = -0.2617993950843811
+    type = "volume"
+
+        [lockscreen_widgets.widget.lockscreen-widget-000000000000000f.settings]
+        background = true
+        shadow = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000010]
+    box_height = 224.0
+    box_width = 3440.0
+    cx = 1720.0
+    cy = 96.000152587890625
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 3440.0
+    rotation = 3.1415927410125732
+    type = "audio_visualizer"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000010.settings]
+        background = false
+        bands = 64
+        centered = false
         show_when_idle = true
 
 [plugins]
