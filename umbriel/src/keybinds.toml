@@ -11,8 +11,8 @@
 "Mod+Ctrl+W" = "workspace-set-layout:dwindle"
 "Mod+Ctrl+E" = "workspace-set-layout:master"
 
-"Mod+Shift+D" = "equibop --toggle-deafen"
-"Mod+Shift+M" = "equibop --toggle-mute"
+"Mod+Shift+D" = "spawn:equibop --toggle-deafen"
+"Mod+Shift+M" = "spawn:equibop --toggle-mute"
 
 "Print" = { action = "spawn:noctalia msg screenshot-region", allow_when_locked = true }
 "Mod+Print" = { action = "spawn:noctalia msg screenshot-fullscreen", allow_when_locked = true }
