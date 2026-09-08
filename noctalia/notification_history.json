@@ -1,5 +1,5 @@
 {
-  "change_serial": 58,
+  "change_serial": 66,
   "entries": [
     {
       "active": false,
@@ -616,8 +616,96 @@
         "urgency": "normal"
       },
       "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 60,
+      "notification": {
+        "actions": [],
+        "app_name": "Rider",
+        "body": "walk",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1788710218317,
+        "icon": "/home/falcon1k/.local/share/JetBrains/Toolbox/apps/rider/bin/rider.svg",
+        "id": 101,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1788710212186,
+        "summary": "Build succeeded",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 62,
+      "notification": {
+        "actions": [],
+        "app_name": "Rider",
+        "body": "walk",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1788710318424,
+        "icon": "/home/falcon1k/.local/share/JetBrains/Toolbox/apps/rider/bin/rider.svg",
+        "id": 102,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1788710312424,
+        "summary": "Build succeeded",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 64,
+      "notification": {
+        "actions": [],
+        "app_name": "Rider",
+        "body": "walk",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1788710447247,
+        "icon": "/home/falcon1k/.local/share/JetBrains/Toolbox/apps/rider/bin/rider.svg",
+        "id": 103,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1788710441247,
+        "summary": "Build succeeded",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
+    },
+    {
+      "active": false,
+      "close_reason": "expired",
+      "event_serial": 66,
+      "notification": {
+        "actions": [],
+        "app_name": "Rider",
+        "body": "walk",
+        "category": null,
+        "desktop_entry": null,
+        "expiry_wall_ms": 1788710765452,
+        "icon": "/home/falcon1k/.local/share/JetBrains/Toolbox/apps/rider/bin/rider.svg",
+        "id": 104,
+        "image_data": null,
+        "origin": "external",
+        "received_wall_ms": 1788710759452,
+        "summary": "Build succeeded",
+        "timeout": 6000,
+        "urgency": "normal"
+      },
+      "seen": false
     }
   ],
-  "next_id": 84,
+  "next_id": 117,
   "version": 2
 }

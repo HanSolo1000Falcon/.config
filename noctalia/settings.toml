@@ -718,13 +718,13 @@ directory = "/home/falcon1k/.config/rice-pictures/Wallpapers/random"
     interval_seconds = 1200
 
     [wallpaper.default]
-    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/6e4ca65cn2ih1.jpeg"
+    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/o6leq3rtjfif1.png"
 
     [wallpaper.last]
-    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/6e4ca65cn2ih1.jpeg"
+    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/o6leq3rtjfif1.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/6e4ca65cn2ih1.jpeg"
+    path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/o6leq3rtjfif1.png"
 
     [wallpaper.monitors.WL-1]
     path = "/home/falcon1k/.config/rice-pictures/Wallpapers/random/r2spobrzft2f1.png"
