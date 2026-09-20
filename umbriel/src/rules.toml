@@ -1,13 +1,13 @@
 [[window_rule]]
-default_width = 0.5
+default_scrolling_extent = 0.5
 
 [[window_rule]]
 match.app_id = "equibop"
-default_width = 0.667
+default_scrolling_extent = 0.667
 
 [[window_rule]]
 match.app_id = "Spotify"
-default_width = 0.333
+default_scrolling_extent = 0.333
 
 [[window_rule]]
 match.app_id = "foot"

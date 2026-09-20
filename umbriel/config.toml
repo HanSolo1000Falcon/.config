@@ -4,9 +4,6 @@ files = [
   "src/input.toml",
   "src/keybinds.toml",
   "src/rules.toml",
+  "src/layout.toml",
   "noctalia.toml",
 ]
-
-
-
-

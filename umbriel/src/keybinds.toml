@@ -1,9 +1,7 @@
 [keybinds]
 "Mod+Q" = "window-close"
 "Mod+Ctrl+F" = "window-toggle-floating"
-"Mod+Shift+R" = "window-set-width:0.333"
-"Mod+R" = "window-set-width:0.5"
-"Mod+Ctrl+R" = "window-set-width:0.667"
+"Mod+R" = "window-cycle-primary-extent"
 "Mod+Shift+F" = "window-toggle-maximize"
 "Mod+Alt+F" = "window-toggle-fullscreen"
 
