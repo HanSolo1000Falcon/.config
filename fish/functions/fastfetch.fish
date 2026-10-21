@@ -1,5 +1,5 @@
 function fastfetch
-    if string match -q '*cachyos*' (hostname)
+    if string match -q '*cach*' (hostname)
         /bin/fastfetch --logo "$HOME/.config/fastfetch/cachyos-minimal.txt"
     else
         /bin/fastfetch
