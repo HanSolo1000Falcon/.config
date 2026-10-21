@@ -5,7 +5,8 @@ files = [
   "src/keybinds.toml",
   "src/rules.toml",
   "src/layout.toml",
-  ]
+  "src/output.toml",
+]
 
 [include.optional]
 files = ["noctalia.toml"]
